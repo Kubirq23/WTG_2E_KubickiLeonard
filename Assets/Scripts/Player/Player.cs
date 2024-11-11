@@ -1,10 +1,10 @@
 
 using UnityEngine;
-
 public class Player : MonoBehaviour
 {
 
-    
+    [SerializeField]
+    private AudioClip Destruction;
     private LogicMenager lg;
     // Start is called before the first frame update
     void Start()
@@ -17,9 +17,10 @@ public class Player : MonoBehaviour
     {
     }
     private void OnTriggerEnter2D(Collider2D other) {
-    if(other.name =="bomb"){            
-            //SoundMenager.instance.SoundClip(dmg,transform,1);
-    }
+        if(other.tag =="bomb"){    
+            lg.DmgPlayer();        
+            SoundMenager.instance.SoundClip(Destruction,transform,1);
+        }
 
     }
     public void End(){

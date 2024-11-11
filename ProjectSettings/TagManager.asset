@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mystery
+  - columnMenager
+  - bullet
+  - bomb
+  - row1
+  - row0
+  - row2
+  - row3
+  - row4
+  - Logic
+  - bunkerp2
+  - bunkerp1
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 302924679583334650}
   m_Layer: 0
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bunkerp1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,14 +140,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3651967953480056649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec87b78c8cb8cb64d85c0656cbf949bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obr: {fileID: 0}
-  p101: {fileID: 0}
-  p102: {fileID: 0}
-  p103: {fileID: 0}
-  p201: {fileID: 0}
+  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
   hp: 0
 --- !u!1 &3983526969093566267
 GameObject:
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 3354917223257662167}
   m_Layer: 0
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bunkerp2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3983526969093566267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec87b78c8cb8cb64d85c0656cbf949bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 3342020652043054809}
   m_Layer: 0
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bunkerp1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4809447974638138915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec87b78c8cb8cb64d85c0656cbf949bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 6259913418587036364}
   m_Layer: 0
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bunkerp1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6684050830658070114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec87b78c8cb8cb64d85c0656cbf949bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 980076228897654216}
   m_Layer: 0
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bunkerp2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,7 +775,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8081142698866366848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec87b78c8cb8cb64d85c0656cbf949bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
@@ -798,7 +798,7 @@ GameObject:
   - component: {fileID: 6209797400882576285}
   m_Layer: 0
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bunkerp2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -879,7 +879,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8598204387934701689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec87b78c8cb8cb64d85c0656cbf949bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 6389159271112624683}
   m_Layer: 0
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bunkerp2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8752546935084112853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec87b78c8cb8cb64d85c0656cbf949bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
@@ -1096,7 +1096,7 @@ GameObject:
   - component: {fileID: 910105100674686051}
   m_Layer: 0
   m_Name: part
-  m_TagString: Untagged
+  m_TagString: bunkerp1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9061943580116214519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec87b78c8cb8cb64d85c0656cbf949bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}

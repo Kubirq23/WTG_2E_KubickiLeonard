@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
-    public bool isfire;
+    public bool isfire = true;
 
     [SerializeField]
     private GameObject bullet;
     
+    [SerializeField]
+    private AudioClip st;
     [SerializeField]
     private float Speed;
     // Start is called before the first frame update
@@ -41,7 +43,7 @@ public class PlayerMovment : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) == true){
             isfire =false;
             Instantiate(bullet,transform.position,transform.rotation);
-            //SoundMenager.instance.SoundClip(st,transform,1);
+            SoundMenager.instance.SoundClip(st,transform,1);
         }
     }
 
