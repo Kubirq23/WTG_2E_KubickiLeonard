@@ -31,7 +31,7 @@ public class bullet : MonoBehaviour
             player.isfire =true;
             return;    
         }
-        else if(other.name == "Player"){
+        else if(other.tag == "Player"){
             return;
         }
         else if(other.tag == "row4" || other.tag == "row3"){

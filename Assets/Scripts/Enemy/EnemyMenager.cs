@@ -55,6 +55,8 @@ public class EnemyMenager : MonoBehaviour
 
     private void Update()
     {
+        columns = GameObject.FindGameObjectsWithTag("columnMenager");
+        if(columns.Length == 0)return;
         godown();
         end();
         MoveTimer();
@@ -72,7 +74,7 @@ public class EnemyMenager : MonoBehaviour
     }
     //Moving timer
     private void MoveTimer(){
-        columns = GameObject.FindGameObjectsWithTag("columnMenager");
+        
         if(time>timer){
             Move();
             Rot();
@@ -92,6 +94,7 @@ public class EnemyMenager : MonoBehaviour
     }
     //rotation after touching side of screan
     private void Rot(){
+        
         if(dow ==true) {
             dow =false;
             return;
@@ -117,7 +120,6 @@ public class EnemyMenager : MonoBehaviour
         }
     }
     private void sendbomb(){
-        columns = GameObject.FindGameObjectsWithTag("columnMenager");
         if(columns == null){return;}
         int licz = Random.Range(0,columns.Length -1);
         col = columns[licz].GetComponent<ColumNenager>();
@@ -205,7 +207,6 @@ public class EnemyMenager : MonoBehaviour
     private void MysteryAppirence(){
         int rad = Random.Range(1,3);
         time3 = Random.Range(8,15);
-        Debug.Log(rad);
         if(rad >= 2){
             rad = -1;
         }

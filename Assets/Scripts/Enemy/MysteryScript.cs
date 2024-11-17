@@ -30,7 +30,6 @@ public class MysteryScript : MonoBehaviour
         }
     }
     private void timer(){
-        Debug.Log(time1);
         if(timer1 >time1){
             transform.position += new Vector3(x*0.1f,0,0);
             timer1 = 0;
