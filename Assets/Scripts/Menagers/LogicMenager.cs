@@ -18,6 +18,10 @@ public class LogicMenager : MonoBehaviour
     private GameObject EndScrean;
     [SerializeField]
     private Text EndText;
+    [SerializeField]
+    private GameObject cot;
+    [SerializeField]
+    private EnemyMenager em;
     private int count;
     private float licz;
     private float tick;
@@ -67,14 +71,14 @@ public class LogicMenager : MonoBehaviour
     }
 
     public void Stop(){
-        //cot.SetActive(true);
-        //em.enabled = false;
+        cot.SetActive(true);
+        em.enabled = false;
         plm.enabled = false;
     }
 
     public void Back(){
-        //cot.SetActive(false);
-        //em.enabled = true;
+        cot.SetActive(false);
+        em.enabled = true;
         plm.enabled = true;
     }
 

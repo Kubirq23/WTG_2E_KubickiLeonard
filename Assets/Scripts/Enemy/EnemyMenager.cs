@@ -55,10 +55,10 @@ public class EnemyMenager : MonoBehaviour
 
     private void Update()
     {
+        end();
         columns = GameObject.FindGameObjectsWithTag("columnMenager");
         if(columns.Length == 0)return;
         godown();
-        end();
         MoveTimer();
         TimerSecret();
         bom();

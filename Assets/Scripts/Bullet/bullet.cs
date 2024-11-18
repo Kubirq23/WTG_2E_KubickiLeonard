@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+    public int wich;
     [SerializeField]
     private AudioClip bom;
     private PlayerMovment player;
+    private PlayerMovment player2;
     private LogicMenager log;
     [SerializeField]
     private float speed;
@@ -13,22 +15,24 @@ public class bullet : MonoBehaviour
     void Start()
     {
         log = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicMenager>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovment>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovment>();
+        player2 = GameObject.Find("Player2").GetComponent<PlayerMovment>();
     }
+
 
     // if bullet goes out from screan destroy it self
     void Update()
     {
         transform.position += new Vector3(0,speed*Time.deltaTime,0);
         if(transform.position.y > 1.1f){
-            player.isfire =true;
+            dd();
             Destroy(gameObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
         //ponts
         if(other.name == "part"){
-            player.isfire =true;
+            dd();
             return;    
         }
         else if(other.tag == "Player"){
@@ -49,7 +53,7 @@ public class bullet : MonoBehaviour
         else if(other.tag == ""){
             hit(0,other.transform.position,false);
         }
-        player.isfire =true;
+        dd();
         Destroy(other.gameObject);
         Destroy(gameObject);
     }
@@ -59,5 +63,15 @@ public class bullet : MonoBehaviour
         log.go =blink;
         BoomMenager.Instance.Destruction(other); 
         SoundMenager.instance.SoundClip(bom,transform,1);
+    }
+    private void dd(){
+        if(wich == 1){
+            player.isfire = true;
+
+        }
+        else if(wich == 2){
+            player2.isfire = true;
+        }
+        else return;
     }
 }

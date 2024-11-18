@@ -18,12 +18,6 @@ public class PlayerMovment : MonoBehaviour
     private float Speed;
 
 
-
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -45,18 +39,19 @@ public class PlayerMovment : MonoBehaviour
         float dan = dir.x;
         transform.position +=new Vector3(Speed*dan*Time.deltaTime,0,0);
     }
-    private void Shot(){
+    private void Shot(int w){
         if(isfire == false)return;
-            isfire =false;
-            Instantiate(bullet,transform.position,transform.rotation);
-            SoundMenager.instance.SoundClip(st,transform,1);
+        isfire = false;
+        GameObject bu =Instantiate(bullet,transform.position,transform.rotation);
+        bu.GetComponent<bullet>().wich = w;
+        
+        SoundMenager.instance.SoundClip(st,transform,1);
     }
-    public void OnFire(InputAction value){
-        Shot();
-        Debug.Log(value);
+    public void OnFire(InputAction.CallbackContext context){
+        Shot(1);
     }
-    public void OnFire1(InputAction value){
-        Shot();
+    public void OnFire1(InputAction.CallbackContext context){
+        Shot(2);
     }
 
 }
