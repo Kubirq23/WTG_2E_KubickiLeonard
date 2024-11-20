@@ -15,8 +15,12 @@ public class bullet : MonoBehaviour
     void Start()
     {
         log = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicMenager>();
-        player = GameObject.Find("Player").GetComponent<PlayerMovment>();
-        player2 = GameObject.Find("Player2").GetComponent<PlayerMovment>();
+        if(!log.isdp1){
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovment>();
+        }
+        if(!log.isdp2){
+            player2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<PlayerMovment>();
+        }
     }
 
 
@@ -30,12 +34,12 @@ public class bullet : MonoBehaviour
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        //ponts
+        //points
         if(other.name == "part"){
             dd();
             return;    
         }
-        else if(other.tag == "Player"){
+        else if(other.tag == "Player"|| other.tag == "Player2"){
             return;
         }
         else if(other.tag == "row4" || other.tag == "row3"){
@@ -65,11 +69,11 @@ public class bullet : MonoBehaviour
         SoundMenager.instance.SoundClip(bom,transform,1);
     }
     private void dd(){
-        if(wich == 1){
+        if(wich == 1 && player != null){
             player.isfire = true;
 
         }
-        else if(wich == 2){
+        else if(wich == 2 && player2 != null){
             player2.isfire = true;
         }
         else return;

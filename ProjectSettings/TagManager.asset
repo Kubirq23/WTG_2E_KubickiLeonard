@@ -16,6 +16,7 @@ TagManager:
   - Logic
   - bunkerp2
   - bunkerp1
+  - Player2
   layers:
   - Default
   - TransparentFX
