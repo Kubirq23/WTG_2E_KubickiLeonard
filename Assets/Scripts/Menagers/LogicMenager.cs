@@ -37,7 +37,7 @@ public class LogicMenager : MonoBehaviour
     private int count,pl;
     private float licz;
     private float tick;
-    private int HP = 3;
+    private int HP = 4;
     private int Score;
     private void Update() {
         Tick();
@@ -93,7 +93,7 @@ public class LogicMenager : MonoBehaviour
 
 
     public void EndGame(bool victory){
-        //em.enabled =false;
+        em.enabled =false;
         plm1.enabled =false;
         pl1in.enabled = false;
         pl2in.enabled = false;  
