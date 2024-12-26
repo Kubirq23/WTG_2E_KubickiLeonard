@@ -121,7 +121,6 @@ public class Enemis01 : MonoBehaviour
                 x = y;
             }
         }
-        Debug.Log(x);
         if(x < -0.85){
             log.EndGame(false);
         }

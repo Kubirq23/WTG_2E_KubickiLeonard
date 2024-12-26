@@ -1,0 +1,1 @@
+Czy mógł by pan uwzględnić folder test w ocenie kodu pliki timer i enemis01 zastempują EnemyMenagera a fall służy do tweenowania przeciwników.Dzięnkuję.
