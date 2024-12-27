@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class MainMenager : MonoBehaviour
+public class MainMenager : MonoBehaviour //Manager
 {
     [SerializeField]
     private bck bc;

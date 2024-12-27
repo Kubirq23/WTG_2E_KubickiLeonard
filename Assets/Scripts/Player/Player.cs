@@ -1,4 +1,4 @@
-
+﻿
 using UnityEngine;
 public class Player : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lg = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicMenager>();
+        lg = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicMenager>(); //to równie dobrze mógłby by być singleton. 
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag =="bomb"){    
             SoundMenager.instance.SoundClip(Destruction,transform,1);
-            lg.DmgPlayer(playernr);        
+            lg.DmgPlayer(playernr);//spaghetti code
         }
 
     }

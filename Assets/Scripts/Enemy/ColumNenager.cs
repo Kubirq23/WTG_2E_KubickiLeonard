@@ -1,7 +1,7 @@
-
+﻿
 using UnityEngine;
 
-public class ColumNenager : MonoBehaviour
+public class ColumNenager : MonoBehaviour //literówka
 {
     [SerializeField]
     private GameObject alien;
@@ -21,7 +21,7 @@ public class ColumNenager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AlienCol();
+        CreateAlienColumn();
         col = GameObject.Find(gameObject.name);
     }
 
@@ -33,8 +33,8 @@ public class ColumNenager : MonoBehaviour
 
 
     //creating column
-    private void AlienCol(){
-        GameObject al = Instantiate(alien,transform.position + new Vector3(0,-0*0.15f,0),transform.rotation,transform);
+    private void CreateAlienColumn(){ //zamiast dawać comentarz ten co wyżej, możesz po prostu nazwać metodę CreateAlienColumn()
+        GameObject al = Instantiate(alien,transform.position + new Vector3(0,-0*0.15f,0),transform.rotation,transform); //magic numbers
         al.tag = "row0";
         al.name = "Alien0";
 
@@ -51,7 +51,7 @@ public class ColumNenager : MonoBehaviour
         }
     }
     //if column is empty - destroy
-    private void check(){
+    private void check(){ //nazwa, formatowanie
         als = new GameObject[col.transform.childCount];
         for (int i = 0; i < als.Length; i++){
             als[i] = col.transform.GetChild(i).gameObject;

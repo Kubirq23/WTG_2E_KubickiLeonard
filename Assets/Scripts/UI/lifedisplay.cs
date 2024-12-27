@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class lifedisplay : MonoBehaviour
+public class lifedisplay : MonoBehaviour //nazwa
 {
     [SerializeField]
     private GameObject life;
