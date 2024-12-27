@@ -1,19 +1,28 @@
-
+﻿
 using UnityEngine;
 
-public class bunkermenage : MonoBehaviour
+public class bunkermenage : MonoBehaviour //CamelCase + literówka
 {
+    public int hp; //to raczej powinien być int
+
     [SerializeField]
     private AudioClip obr;
+
     [SerializeField]
     private Sprite p101;
+
     [SerializeField]
     private Sprite p102;
+
     [SerializeField]
     private Sprite p103;
+
+    [SerializeField]
+    private Sprite[] bunkerSprites; // sprite można przechowywać w tablicy lub liście zamiast w kilku zmiennych
+ 
     [SerializeField]
     private Sprite p201;
-    public float hp;
+
     private SpriteRenderer sr;
     // Start is called before the first frame update
     void Start()
@@ -23,13 +32,15 @@ public class bunkermenage : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() //usuwaj metody które są puste lub ich nie używasz
     {
         
     }
-    private void helth(){
-        if(gameObject.tag == "bunkerp2"){
-            
+
+    private void helth() //nazwa
+    {
+        if(gameObject.CompareTag("bunkerp2")) //używaj CompareTag
+        {
             hp =2;
         }
         else if(gameObject.tag == "bunkerp1"){
@@ -39,6 +50,7 @@ public class bunkermenage : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    //nazwa
     private void dmg(){
         hp -=1;
         if(hp == 1 && tag == "bunkerp2"){
@@ -54,13 +66,18 @@ public class bunkermenage : MonoBehaviour
             sr.sprite = p101;
         }
 
-        if(hp == 0){
+        //jak masz tablicę lub liste to możesz zrobić tak:
+        //var spriteId = Mathf.Clamp(hp - 1, 0, bunkerSprites.Length);
+
+        if(hp <= 0) 
+        {
             SoundMenager.instance.SoundClip(obr,transform,1);
            Destroy(gameObject);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
         dmg();
         Destroy(other.gameObject);
     }

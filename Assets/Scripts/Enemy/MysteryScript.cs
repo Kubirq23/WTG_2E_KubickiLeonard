@@ -1,6 +1,6 @@
-
+﻿
 using UnityEngine;
-public class MysteryScript : MonoBehaviour
+public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza
 {
     [SerializeField]
     private float time1 = 2;

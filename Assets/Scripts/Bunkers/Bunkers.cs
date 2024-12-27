@@ -1,5 +1,4 @@
-
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bunkers : MonoBehaviour
 {
@@ -17,10 +16,10 @@ public class Bunkers : MonoBehaviour
     {
         
     }
-    private void setbunkers(){
+    private void setbunkers(){ //nazwa
         for (int i = 0; i < 4; i++)
         {
-            Instantiate(bunker,transform.position+ new Vector3(0.9f*i,0,0),transform.rotation,transform);
+            Instantiate(bunker, transform.position + new Vector3(0.9f*i, 0, 0), transform.rotation,transform); //0.9f masz jako magic number, wyciągnij to do zmiennej
         }
     }
 }

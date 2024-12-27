@@ -1,8 +1,8 @@
-
+﻿
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyMenager : MonoBehaviour
+public class EnemyMenager : MonoBehaviour //Manager
 {   
     public float descount;
     [SerializeField]
@@ -34,7 +34,7 @@ public class EnemyMenager : MonoBehaviour
 
     private ColumNenager col;
 
-    private float timer = 1.5f;
+    private float timer = 1.5f; //za dużo tych timerów, nie wiadomo któy do czego służy
 
     private float time2;
     private float dir =1;
@@ -137,11 +137,12 @@ public class EnemyMenager : MonoBehaviour
     }
     //ending if bottom row toches player line
     private void godown(){
-        row1 = GameObject.FindGameObjectsWithTag("row1");
-        row2 = GameObject.FindGameObjectsWithTag("row2");
+        row1 = GameObject.FindGameObjectsWithTag("row1"); //da się to lepiej zrobić, w skrpycie w którym spawnujesz wrogó dodawaj ich jednocześnie do odpowiedniego row
+        row2 = GameObject.FindGameObjectsWithTag("row2"); //przeciwiników mógłbyś też przechowywać albo w liście która jest w liście, albo w dictionary
         row3 = GameObject.FindGameObjectsWithTag("row3");
         row4 = GameObject.FindGameObjectsWithTag("row4");
-        if(row4.Length ==0){
+
+        if(row4.Length ==0){ //to jest abominacja. Takiego hard codingu trzeba unikać.
 
             if(row3.Length == 0){
 
@@ -180,7 +181,7 @@ public class EnemyMenager : MonoBehaviour
 
     }
     //speeding last ufo
-    private void speedufo(){
+    private void speedufo(){ //to raczej powinno się wykonać raz przy użyciu eventu, a nie co klatkę
         if(columns.Length >1 ){
             return;
         }

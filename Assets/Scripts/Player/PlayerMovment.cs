@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovment : MonoBehaviour
 {
-    public bool isfire = true;
+    public bool canfire = true;
 
     [SerializeField]
     private InputActionReference move,Shoot;
@@ -40,8 +40,8 @@ public class PlayerMovment : MonoBehaviour
         transform.position +=new Vector3(Speed*dan*Time.deltaTime,0,0);
     }
     private void Shot(int w){
-        if(isfire == false)return;
-        isfire = false;
+        if(canfire == false)return;
+        canfire = false;
         GameObject bu =Instantiate(bullet,transform.position,transform.rotation);
         bu.GetComponent<bullet>().wich = w;
         
@@ -50,7 +50,7 @@ public class PlayerMovment : MonoBehaviour
     public void OnFire(InputAction.CallbackContext context){
         Shot(1);
     }
-    public void OnFire1(InputAction.CallbackContext context){
+    public void OnFire1(InputAction.CallbackContext context){ //? co to jest?. wystarczy ci jedna metoda onfire
         Shot(2);
     }
 

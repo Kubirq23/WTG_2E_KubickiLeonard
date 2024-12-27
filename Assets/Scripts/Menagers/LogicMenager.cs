@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 public class LogicMenager : MonoBehaviour
 {
+    //da się zmiejszyć liczbę zmiennych o conajmniej połowę. część tej logiki powinna być w skrypcie gracza
+    //nazwy zmiennych są niedeskryptywne
     public bool go,isdp1,isdp2;
     [SerializeField]
     private lifedisplay ld;
@@ -47,14 +49,16 @@ public class LogicMenager : MonoBehaviour
         Score += points;
         score.text = Score.ToString();
     } 
-    public void DmgPlayer(int nr){
+    public void DmgPlayer(int nr)
+    {
         if(HP >0){
             HP--;
             ld.change(HP);
-        }        
+        }   
+        
         if(nr ==1){
             pl =1;
-            bcp1.enabled =false;
+            bcp1.enabled =false; //te 3 linijki powinny być w skrypcie gracza
             plm1.enabled = false;
             Player1Anim.SetBool("EndAnim", true);
         }

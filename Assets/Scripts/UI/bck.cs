@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bck : MonoBehaviour
+public class bck : MonoBehaviour //nazwa
 {
     [SerializeField]
     private AudioSource sn;

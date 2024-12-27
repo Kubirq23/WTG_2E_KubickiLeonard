@@ -1,7 +1,7 @@
-
+﻿
 using UnityEngine;
 
-public class SoundMenager : MonoBehaviour
+public class SoundMenager : MonoBehaviour //literówka
 {
     public static SoundMenager instance;
     [SerializeField]
@@ -12,7 +12,8 @@ public class SoundMenager : MonoBehaviour
             instance = this;
         }
     }
-    public void SoundClip(AudioClip audioclip,Transform tr,float vol){
+    public void SoundClip(AudioClip audioclip,Transform tr,float vol){ //jak masz grę 2D to nie musisz spawnować AudioSource za każdym razem
+        //możesz użyć metody AudioSource.PlayOneShot. Ja bym użył jakiegoś gotowego systemu do audio
         if(Com.mc == false){
             return;
         }
