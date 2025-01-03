@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-public class SoundMenager : MonoBehaviour //literówka
+public class SoundMenager : MonoBehaviour //literówka // men... => man... wiem
 {
     public static SoundMenager instance;
     [SerializeField]

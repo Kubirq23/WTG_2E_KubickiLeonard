@@ -9,7 +9,7 @@ public class BoomMenager : MonoBehaviour //nazwa
     private GameObject DA; //nazwa
     private void Awake()
     {
-        if (Instance == null) //zabezpieczenie singletona na wypadek, gdyby był drugi na scenie
+        if (Instance == null) //zabezpieczenie singletona na wypadek, gdyby był drugi na scenie // zapomialem
         {
             Instance = this;
         } else Destroy(Instance.gameObject);

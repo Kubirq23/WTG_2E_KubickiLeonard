@@ -1,12 +1,12 @@
 ﻿
 using UnityEngine;
-public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza
+public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza // ale smiesznie
 {
     [SerializeField]
     private float time1 = 2;
     private float timer1;
     private int x;
-    // Start is called before the first frame update
+
     void Start()
     {
         time1 = 0.2f;
@@ -18,7 +18,6 @@ public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         destuction();

@@ -2,7 +2,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyMenager : MonoBehaviour //Manager
+public class EnemyMenager : MonoBehaviour //Manager //wiem
 {   
     public float descount;
     [SerializeField]
@@ -181,7 +181,7 @@ public class EnemyMenager : MonoBehaviour //Manager
 
     }
     //speeding last ufo
-    private void speedufo(){ //to raczej powinno się wykonać raz przy użyciu eventu, a nie co klatkę
+    private void speedufo(){ //to raczej powinno się wykonać raz przy użyciu eventu, a nie co klatkę // jeszcze nie rozumiem eventow
         if(columns.Length >1 ){
             return;
         }

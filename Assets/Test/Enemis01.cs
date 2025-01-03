@@ -77,19 +77,12 @@ public class Enemis01 : MonoBehaviour
     }
     //updating the list
     private void reload(){
-        foreach (var list in mainList){//
-            if(list == null)mainList.Remove(list);
-            for (int i = 0; i < list.Count; i++)
+            mainList.RemoveAll(_ => _ == null);
+            foreach (var item in mainList)
             {
-                if(list[i] == null) list.RemoveAt(i);                
-            }
-            if(list.Count == 0){
-                mainList.Remove(list);
-            }
-        }
-        for (int i = 0; i < ile.Count; i++){
-            if(ile[i] == null) ile.RemoveAt(i);
-        }
+                item.RemoveAll(_ => _ == null);
+                if(item.Count == 0) mainList.Remove(item);
+            }       
     }
     //sending bombs
     private void Kaboom(){

@@ -17,6 +17,8 @@ TagManager:
   - bunkerp2
   - bunkerp1
   - Player2
+  - PlayerBullet
+  - Alien
   layers:
   - Default
   - TransparentFX

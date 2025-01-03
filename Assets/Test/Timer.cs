@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
     public bool onoff;
     public float time;
     [SerializeField]
-    private Enemis01 enemis01;
+    private Enemy02 enemis02;
     [SerializeField]
     private int nr;
     private float timer;
@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
         else{
             if(timer > time){
                 timer = 0;
-                enemis01.timeout(nr);
+                enemis02.TimeOut(nr);
             }
             else{
                 timer += Time.deltaTime;

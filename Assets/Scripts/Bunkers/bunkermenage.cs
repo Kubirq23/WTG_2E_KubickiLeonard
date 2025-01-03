@@ -1,9 +1,9 @@
 ﻿
 using UnityEngine;
 
-public class bunkermenage : MonoBehaviour //CamelCase + literówka
+public class bunkermenage : MonoBehaviour //CamelCase + literówka //nie wiem + wiem
 {
-    public int hp; //to raczej powinien być int
+    public int hp; //to raczej powinien być int //moze
 
     [SerializeField]
     private AudioClip obr;
@@ -24,18 +24,14 @@ public class bunkermenage : MonoBehaviour //CamelCase + literówka
     private Sprite p201;
 
     private SpriteRenderer sr;
-    // Start is called before the first frame update
     void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
         helth();
     }
 
-    // Update is called once per frame
-    void Update() //usuwaj metody które są puste lub ich nie używasz
-    {
-        
-    }
+    //usuwaj metody które są puste lub ich nie używasz
+
 
     private void helth() //nazwa
     {
@@ -43,7 +39,7 @@ public class bunkermenage : MonoBehaviour //CamelCase + literówka
         {
             hp =2;
         }
-        else if(gameObject.tag == "bunkerp1"){
+        else if(gameObject.CompareTag("bunkerp1")){
             hp=4;
         }
         else{
@@ -53,21 +49,21 @@ public class bunkermenage : MonoBehaviour //CamelCase + literówka
     //nazwa
     private void dmg(){
         hp -=1;
-        if(hp == 1 && tag == "bunkerp2"){
+        if(hp == 1 && gameObject.CompareTag("bunkerp2")){
             sr.sprite = p201;
         }
-        else if(hp == 1 && tag == "bunkerp1"){
+        else if(hp == 1 && gameObject.CompareTag("bunkerp1")){
             sr.sprite = p103;
         }
-        else if(hp == 2 && tag == "bunkerp1"){
+        else if(hp == 2 && gameObject.CompareTag("bunkerp1")){
             sr.sprite = p102;
         }
-        else if(hp == 3 && tag == "bunkerp1"){
+        else if(hp == 3 && gameObject.CompareTag("bunkerp1")){
             sr.sprite = p101;
         }
 
         //jak masz tablicę lub liste to możesz zrobić tak:
-        //var spriteId = Mathf.Clamp(hp - 1, 0, bunkerSprites.Length);
+        //var spriteId = Mathf.Clamp(hp - 1, 0, bunkerSprites.Length); //co to?
 
         if(hp <= 0) 
         {
@@ -78,7 +74,17 @@ public class bunkermenage : MonoBehaviour //CamelCase + literówka
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        dmg();
-        Destroy(other.gameObject);
+        if(other.CompareTag("PlayerBullet")){
+                dmg();
+                other.GetComponent<TestBulletControler>().Player.GetComponent<TestPlayerMovment>().canfire = true;
+                Destroy(other.gameObject);
+        }
+        else if( other.CompareTag("bomb")){
+                dmg();
+                Destroy(other.gameObject);
+        }
+        else{
+            Destroy(gameObject);
+        }
     }
 }

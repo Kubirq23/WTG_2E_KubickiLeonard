@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class MainMenager : MonoBehaviour //Manager
+public class MainMenager : MonoBehaviour //Manager // wiem
 {
     [SerializeField]
     private bck bc;
 
     [SerializeField]
-    private GameObject main;
+    private GameObject main,PreStart;
     [SerializeField]
     private GameObject cred;
     [SerializeField]
@@ -16,6 +16,10 @@ public class MainMenager : MonoBehaviour //Manager
     private Text onf;
     private bool onoff;
 
+    public void PrePlay(){
+        main.SetActive(false);
+        PreStart.SetActive(true);
+    }
     public void Play(){
         SceneManager.LoadScene(1);
     }
@@ -33,7 +37,7 @@ public class MainMenager : MonoBehaviour //Manager
         set.SetActive(false);
     }
     public void Sound(){
-        if(onoff == true){
+        if(onoff){
             onoff = !onoff;
             Com.mc = !Com.mc;
             onf.text = "On";

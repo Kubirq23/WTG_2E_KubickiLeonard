@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bck : MonoBehaviour //nazwa
+public class bck : MonoBehaviour //nazwa //guzik dzwienku
 {
     [SerializeField]
     private AudioSource sn;
@@ -11,7 +11,7 @@ public class bck : MonoBehaviour //nazwa
     }
 
     public void BckSound(bool cp){
-        if(cp == false){
+        if(!cp){
             sn.Stop();
             return;
         }

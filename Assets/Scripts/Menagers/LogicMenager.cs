@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class LogicMenager : MonoBehaviour
 {
     //da się zmiejszyć liczbę zmiennych o conajmniej połowę. część tej logiki powinna być w skrypcie gracza
-    //nazwy zmiennych są niedeskryptywne
+    //nazwy zmiennych są niedeskryptywne // ????
     public bool go,isdp1,isdp2;
     [SerializeField]
     private lifedisplay ld;

@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-public class ColumNenager : MonoBehaviour //literówka
+public class ColumNenager : MonoBehaviour //literówka // wiem
 {
     [SerializeField]
     private GameObject alien;
@@ -16,16 +16,12 @@ public class ColumNenager : MonoBehaviour //literówka
 
     public GameObject[] als;
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
         CreateAlienColumn();
         col = GameObject.Find(gameObject.name);
     }
 
-    // Update is called once per frame
     void Update()
     {
         check();
@@ -33,33 +29,40 @@ public class ColumNenager : MonoBehaviour //literówka
 
 
     //creating column
-    private void CreateAlienColumn(){ //zamiast dawać comentarz ten co wyżej, możesz po prostu nazwać metodę CreateAlienColumn()
-        GameObject al = Instantiate(alien,transform.position + new Vector3(0,-0*0.15f,0),transform.rotation,transform); //magic numbers
+    private void CreateAlienColumn()
+    { //zamiast dawać comentarz ten co wyżej, możesz po prostu nazwać metodę CreateAlienColumn()
+        GameObject al = Instantiate(alien, transform.position + new Vector3(0, -0 * 0.15f, 0), transform.rotation, transform); //magic numbers
         al.tag = "row0";
         al.name = "Alien0";
 
-        for(int i = 0; i < 2; i++){
-            al = Instantiate(alien20,transform.position + new Vector3(0,-(i+1)*0.15f,0),transform.rotation,transform);
-            al.tag = "row"+ (i+1).ToString();
-            al.name = "Alien" + (i+1).ToString();
+        for (int i = 0; i < 2; i++)
+        {
+            al = Instantiate(alien20, transform.position + new Vector3(0, -(i + 1) * 0.15f, 0), transform.rotation, transform);
+            al.tag = "row" + (i + 1).ToString();
+            al.name = "Alien" + (i + 1).ToString();
         }
 
-        for(int i = 0; i < 2; i++){
-            al = Instantiate(alien10,transform.position + new Vector3(0,-(i+3)*0.15f,0),transform.rotation,transform);
-            al.tag = "row"+ (i+3).ToString();
-            al.name = "Alien" + (i+3).ToString();
+        for (int i = 0; i < 2; i++)
+        {
+            al = Instantiate(alien10, transform.position + new Vector3(0, -(i + 3) * 0.15f, 0), transform.rotation, transform);
+            al.tag = "row" + (i + 3).ToString();
+            al.name = "Alien" + (i + 3).ToString();
         }
     }
     //if column is empty - destroy
-    private void check(){ //nazwa, formatowanie
+    private void check()
+    { //nazwa, formatowanie// ???
         als = new GameObject[col.transform.childCount];
-        for (int i = 0; i < als.Length; i++){
+        for (int i = 0; i < als.Length; i++)
+        {
             als[i] = col.transform.GetChild(i).gameObject;
         }
-        if(als.Length <= 0){
+        if (als.Length <= 0)
+        {
             Destroy(gameObject);
         }
-        else{
+        else
+        {
             return;
         }
     }

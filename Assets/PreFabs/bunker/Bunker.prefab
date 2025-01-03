@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 780717778798624522}
   - component: {fileID: 6593191120457364771}
   - component: {fileID: 302924679583334650}
+  - component: {fileID: 3685533319956918865}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp1
@@ -143,12 +144,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
   p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
   p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
   p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  bunkerSprites: []
   p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
-  hp: 0
+--- !u!50 &3685533319956918865
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651967953480056649}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3983526969093566267
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,6 +190,7 @@ GameObject:
   - component: {fileID: 8392429667724027027}
   - component: {fileID: 2588576527858707667}
   - component: {fileID: 3354917223257662167}
+  - component: {fileID: 572024350801897406}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp2
@@ -247,12 +277,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
   p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
   p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
   p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  bunkerSprites: []
   p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
-  hp: 0
 --- !u!61 &3354917223257662167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -298,6 +329,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!50 &572024350801897406
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3983526969093566267}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4809447974638138915
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +368,7 @@ GameObject:
   - component: {fileID: 1704194758905634531}
   - component: {fileID: 1655926305719123308}
   - component: {fileID: 3342020652043054809}
+  - component: {fileID: 400298354513839650}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp1
@@ -396,12 +455,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
   p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
   p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
   p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  bunkerSprites: []
   p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
-  hp: 0
 --- !u!61 &3342020652043054809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -447,6 +507,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!50 &400298354513839650
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4809447974638138915}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5426829166137404971
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +585,7 @@ GameObject:
   - component: {fileID: 4358325674724468615}
   - component: {fileID: 2842834884044202316}
   - component: {fileID: 6259913418587036364}
+  - component: {fileID: 8480072548952856211}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp1
@@ -584,12 +672,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
   p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
   p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
   p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  bunkerSprites: []
   p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
-  hp: 0
 --- !u!61 &6259913418587036364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -635,6 +724,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!50 &8480072548952856211
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6684050830658070114}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8081142698866366848
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +763,7 @@ GameObject:
   - component: {fileID: 9186342330604212251}
   - component: {fileID: 5262337914647070324}
   - component: {fileID: 980076228897654216}
+  - component: {fileID: 5242204089910876400}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp2
@@ -778,12 +895,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
   p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
   p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
   p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  bunkerSprites: []
   p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
-  hp: 0
+--- !u!50 &5242204089910876400
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081142698866366848}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8598204387934701689
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +941,7 @@ GameObject:
   - component: {fileID: 2872565920177749438}
   - component: {fileID: 6014890445898029174}
   - component: {fileID: 6209797400882576285}
+  - component: {fileID: 8548816816600805540}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp2
@@ -882,12 +1028,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
   p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
   p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
   p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  bunkerSprites: []
   p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
-  hp: 0
 --- !u!61 &6209797400882576285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -933,6 +1080,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!50 &8548816816600805540
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598204387934701689}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8752546935084112853
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +1119,7 @@ GameObject:
   - component: {fileID: 5602187002721361140}
   - component: {fileID: 7969825897724278095}
   - component: {fileID: 6389159271112624683}
+  - component: {fileID: 4375498233183317078}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp2
@@ -1031,12 +1206,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
   p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
   p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
   p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  bunkerSprites: []
   p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
-  hp: 0
 --- !u!61 &6389159271112624683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1082,6 +1258,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!50 &4375498233183317078
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752546935084112853}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &9061943580116214519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1297,7 @@ GameObject:
   - component: {fileID: 3015517497988479014}
   - component: {fileID: 6680592230817811185}
   - component: {fileID: 910105100674686051}
+  - component: {fileID: 1371801782418309794}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp1
@@ -1180,12 +1384,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
   p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
   p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
   p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  bunkerSprites: []
   p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
-  hp: 0
 --- !u!61 &910105100674686051
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1231,3 +1436,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!50 &1371801782418309794
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061943580116214519}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
