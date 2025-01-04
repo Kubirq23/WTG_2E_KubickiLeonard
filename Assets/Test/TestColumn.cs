@@ -6,7 +6,7 @@ public class TestColumn : MonoBehaviour{
     public GameObject[] columnUfos ;
 
     [SerializeField]
-    private GameObject al1,al2,al3;
+    private GameObject al1,al2,al3,bomb;
 
     private void Start() {
         CreateColumn();    
@@ -36,5 +36,11 @@ public class TestColumn : MonoBehaviour{
         if(columnUfos.Length == 0) return 1;
         if(columnUfos[columnUfos.Length -1] == null && columnUfos.Length >=2)return columnUfos[columnUfos.Length -2].transform.position.y;
         return columnUfos[columnUfos.Length -1].transform.position.y;
+    }
+    public void SendBomb(){
+        if(columnUfos.Length == 0) return;
+        var ktore = Random.Range(0,columnUfos.Length -1);
+        var bo = Instantiate(bomb,columnUfos[ktore].transform.position,Quaternion.identity);
+        bo.name ="bomb";
     }
 }

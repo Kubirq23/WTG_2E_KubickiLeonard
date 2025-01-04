@@ -40,6 +40,8 @@ public class TestPlayerMovment : MonoBehaviour{
         canfire = false;
         GameObject bu = Instantiate(bullet, transform.position, transform.rotation);
         bu.GetComponent<TestBulletControler>().Player = gameObject;
+        bu.GetComponent<SpriteRenderer>().color = Com.color(GetComponent<TestPlayer>().kto);
+        Debug.Log(GetComponent<TestPlayer>().kto);
 
         SoundMenager.instance.SoundClip(st, transform, 1);
     }

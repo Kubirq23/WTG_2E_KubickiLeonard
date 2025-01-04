@@ -15,8 +15,9 @@ public class BoomMenager : MonoBehaviour //nazwa
         } else Destroy(Instance.gameObject);
     }
 
-    public void Destruction(Vector3 pos){
+    public void Destruction(Vector3 pos,Color color){
         GameObject b = Instantiate(DA,pos,transform.rotation);
+        b.GetComponent<SpriteRenderer>().color = color;
     }
 
 }

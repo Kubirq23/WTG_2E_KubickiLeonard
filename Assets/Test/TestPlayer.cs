@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TestPlayer : MonoBehaviour{
 
+    public int kto;
     [SerializeField]
     private GameObject lifedis;
 
@@ -24,7 +25,7 @@ public class TestPlayer : MonoBehaviour{
     private TestLifeDisplay testLifeDisplay;
     
     [SerializeField]
-    private int Life,kto;
+    private int Life;
 
     private void Start(){
         var lif = Instantiate(lifedis,new Vector3(1.4f,0.7f+kto*0.1f,0),Quaternion.identity);

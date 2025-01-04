@@ -2,8 +2,7 @@
 using UnityEngine;
 
 public class Enemy02 : MonoBehaviour{
-    [SerializeField]
-    private GameObject Bomb;
+
     [SerializeField]
     private GameObject Column;
     private GameObject[] ExistColumns;
@@ -55,12 +54,9 @@ public class Enemy02 : MonoBehaviour{
 
     }
      private void Kaboom(){
-        if(ExistColumns.Length == 0) return;
+        if(ExistColumns.Length == 0 || ExistColumns == null) return;
         int l1 = Random.Range(0,ExistColumns.Length  -1);
-        int l2 = Random.Range(0,ExistColumns[l1].GetComponent<TestColumn>().columnUfos.Length -1);
-        Transform loc = ExistColumns[l1].GetComponent<TestColumn>().columnUfos[l2].transform;
-        var bo = Instantiate(Bomb,loc.position,loc.rotation);
-        bo.name ="bomb";
+        ExistColumns[l1].GetComponent<TestColumn>().SendBomb();
 
     }   
         //End Game

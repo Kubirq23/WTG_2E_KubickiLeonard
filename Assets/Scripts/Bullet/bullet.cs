@@ -83,7 +83,7 @@ public class bullet : MonoBehaviour //nazwy klas ( w tym plików) powinno sie pi
     {
         log.AddScore(ptk);
         log.go =blink;
-        BoomMenager.Instance.Destruction(other); 
+        BoomMenager.Instance.Destruction(other,Com.color(1)); 
         SoundMenager.instance.SoundClip(bom,transform,1);
     }
 
