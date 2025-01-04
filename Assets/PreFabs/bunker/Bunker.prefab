@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6150453045279214640}
   - component: {fileID: 780717778798624522}
   - component: {fileID: 6593191120457364771}
-  - component: {fileID: 302924679583334650}
   - component: {fileID: 3685533319956918865}
+  - component: {fileID: 6979288729360631889}
+  - component: {fileID: 4329231085158627153}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp1
@@ -132,25 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &302924679583334650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3651967953480056649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
-  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
-  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
-  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
-  bunkerSprites: []
-  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
 --- !u!50 &3685533319956918865
 Rigidbody2D:
   serializedVersion: 4
@@ -178,6 +160,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6979288729360631889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651967953480056649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715ac44a98935cbbb19c6a7544999ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
+  sprites2:
+  - {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  - {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  - {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  hp: 4
+  ktore: 2
+  destruction: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+--- !u!114 &4329231085158627153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651967953480056649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2583b5bc0ced9fd4b4158ca16dfc6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3983526969093566267
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,9 +203,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1848580542282280932}
   - component: {fileID: 8392429667724027027}
-  - component: {fileID: 2588576527858707667}
   - component: {fileID: 3354917223257662167}
   - component: {fileID: 572024350801897406}
+  - component: {fileID: 2006974650650230911}
+  - component: {fileID: 7790482099027652564}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp2
@@ -265,25 +281,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2588576527858707667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3983526969093566267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
-  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
-  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
-  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
-  bunkerSprites: []
-  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
 --- !u!61 &3354917223257662167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -356,6 +353,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2006974650650230911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3983526969093566267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715ac44a98935cbbb19c6a7544999ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
+  sprites2:
+  - {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  - {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  - {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  hp: 2
+  ktore: 1
+  destruction: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+--- !u!114 &7790482099027652564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3983526969093566267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2583b5bc0ced9fd4b4158ca16dfc6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4809447974638138915
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,9 +396,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7894615520900909652}
   - component: {fileID: 1704194758905634531}
-  - component: {fileID: 1655926305719123308}
   - component: {fileID: 3342020652043054809}
   - component: {fileID: 400298354513839650}
+  - component: {fileID: 2365961612257899287}
+  - component: {fileID: 4526492311111581431}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp1
@@ -443,25 +474,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1655926305719123308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4809447974638138915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
-  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
-  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
-  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
-  bunkerSprites: []
-  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
 --- !u!61 &3342020652043054809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -534,6 +546,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2365961612257899287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4809447974638138915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715ac44a98935cbbb19c6a7544999ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
+  sprites2:
+  - {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  - {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  - {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  hp: 4
+  ktore: 2
+  destruction: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+--- !u!114 &4526492311111581431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4809447974638138915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2583b5bc0ced9fd4b4158ca16dfc6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5426829166137404971
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,9 +628,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1992865812990858315}
   - component: {fileID: 4358325674724468615}
-  - component: {fileID: 2842834884044202316}
   - component: {fileID: 6259913418587036364}
   - component: {fileID: 8480072548952856211}
+  - component: {fileID: 8344143268830083888}
+  - component: {fileID: 82446938453432711}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp1
@@ -660,25 +706,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2842834884044202316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6684050830658070114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
-  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
-  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
-  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
-  bunkerSprites: []
-  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
 --- !u!61 &6259913418587036364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -751,6 +778,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8344143268830083888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6684050830658070114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715ac44a98935cbbb19c6a7544999ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
+  sprites2:
+  - {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  - {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  - {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  hp: 4
+  ktore: 2
+  destruction: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+--- !u!114 &82446938453432711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6684050830658070114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2583b5bc0ced9fd4b4158ca16dfc6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8081142698866366848
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,8 +822,9 @@ GameObject:
   - component: {fileID: 3354199657187479525}
   - component: {fileID: 9186342330604212251}
   - component: {fileID: 5262337914647070324}
-  - component: {fileID: 980076228897654216}
   - component: {fileID: 5242204089910876400}
+  - component: {fileID: 7510222440413026954}
+  - component: {fileID: 6988530214763347956}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp2
@@ -883,25 +944,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &980076228897654216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8081142698866366848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
-  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
-  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
-  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
-  bunkerSprites: []
-  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
 --- !u!50 &5242204089910876400
 Rigidbody2D:
   serializedVersion: 4
@@ -929,6 +971,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7510222440413026954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081142698866366848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715ac44a98935cbbb19c6a7544999ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
+  sprites2:
+  - {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  - {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  - {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  hp: 2
+  ktore: 1
+  destruction: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+--- !u!114 &6988530214763347956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081142698866366848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2583b5bc0ced9fd4b4158ca16dfc6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8598204387934701689
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,9 +1014,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5994941887268899468}
   - component: {fileID: 2872565920177749438}
-  - component: {fileID: 6014890445898029174}
   - component: {fileID: 6209797400882576285}
   - component: {fileID: 8548816816600805540}
+  - component: {fileID: 4936913621726346079}
+  - component: {fileID: 4056499976127440494}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp2
@@ -1016,25 +1092,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6014890445898029174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598204387934701689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
-  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
-  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
-  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
-  bunkerSprites: []
-  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
 --- !u!61 &6209797400882576285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1107,6 +1164,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4936913621726346079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598204387934701689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715ac44a98935cbbb19c6a7544999ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
+  sprites2:
+  - {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  - {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  - {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  hp: 2
+  ktore: 1
+  destruction: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+--- !u!114 &4056499976127440494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598204387934701689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2583b5bc0ced9fd4b4158ca16dfc6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8752546935084112853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,9 +1207,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5337153518775177844}
   - component: {fileID: 5602187002721361140}
-  - component: {fileID: 7969825897724278095}
   - component: {fileID: 6389159271112624683}
   - component: {fileID: 4375498233183317078}
+  - component: {fileID: 4165005745537241485}
+  - component: {fileID: 5284468130712751135}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp2
@@ -1194,25 +1285,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7969825897724278095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8752546935084112853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
-  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
-  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
-  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
-  bunkerSprites: []
-  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
 --- !u!61 &6389159271112624683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1285,6 +1357,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4165005745537241485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752546935084112853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715ac44a98935cbbb19c6a7544999ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
+  sprites2:
+  - {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  - {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  - {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  hp: 2
+  ktore: 1
+  destruction: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+--- !u!114 &5284468130712751135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752546935084112853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2583b5bc0ced9fd4b4158ca16dfc6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9061943580116214519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,9 +1400,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2491092603523071858}
   - component: {fileID: 3015517497988479014}
-  - component: {fileID: 6680592230817811185}
   - component: {fileID: 910105100674686051}
   - component: {fileID: 1371801782418309794}
+  - component: {fileID: 4690065934393346304}
+  - component: {fileID: 1085189926442425563}
   m_Layer: 0
   m_Name: part
   m_TagString: bunkerp1
@@ -1372,25 +1478,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6680592230817811185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9061943580116214519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973feb056ce50e2a0bd4e0bbb60b7d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  obr: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
-  p101: {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
-  p102: {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
-  p103: {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
-  bunkerSprites: []
-  p201: {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
 --- !u!61 &910105100674686051
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1463,3 +1550,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4690065934393346304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061943580116214519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715ac44a98935cbbb19c6a7544999ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: b2b5ab53e2bfb82d9bcb4438d2f3f226, type: 3}
+  sprites2:
+  - {fileID: 21300000, guid: c95ea8e7d4f6a384db50a55fe3f188e4, type: 3}
+  - {fileID: 21300000, guid: 30aa45a630b1e56c986fd62d5054141b, type: 3}
+  - {fileID: 21300000, guid: 0435ba5805a9478039a477ea7aedab5b, type: 3}
+  hp: 4
+  ktore: 2
+  destruction: {fileID: 8300000, guid: 61d07e5eec3583d2e9cd260e32a2c1fe, type: 3}
+--- !u!114 &1085189926442425563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061943580116214519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2583b5bc0ced9fd4b4158ca16dfc6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

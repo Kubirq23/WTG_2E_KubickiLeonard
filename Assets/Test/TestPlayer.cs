@@ -39,6 +39,7 @@ public class TestPlayer : MonoBehaviour{
         Life --;
         Invincibility(true);
         animator.SetBool("EndAnim",true);
+        Debug.Log(Life);
         if(Life <= 0){
             TestLogicMenager.instance.PlayerDead();
             Destroy(gameObject);

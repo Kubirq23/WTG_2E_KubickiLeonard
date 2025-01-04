@@ -9,9 +9,8 @@ public class MainMenager : MonoBehaviour //Manager // wiem
     [SerializeField]
     private GameObject main,PreStart;
     [SerializeField]
-    private GameObject cred;
-    [SerializeField]
-    private GameObject set;
+    private GameObject cred,set,preplay;
+
     [SerializeField]
     private Text onf;
     private bool onoff;
@@ -54,5 +53,6 @@ public class MainMenager : MonoBehaviour //Manager // wiem
         main.SetActive(true);
         cred.SetActive(false);
         set.SetActive(false);
+        preplay.SetActive(false);
     }
 }

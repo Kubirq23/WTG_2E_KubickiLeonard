@@ -472,7 +472,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 219220478}
         m_TargetAssemblyTypeName: MainMenager, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: Back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -569,6 +569,7 @@ MonoBehaviour:
   PreStart: {fileID: 1746119027}
   cred: {fileID: 928947558}
   set: {fileID: 1578641246}
+  preplay: {fileID: 1746119027}
   onf: {fileID: 443574367}
 --- !u!1 &302013098
 GameObject:

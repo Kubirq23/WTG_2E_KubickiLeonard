@@ -3,8 +3,10 @@ using UnityEngine;
 public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza // ale smiesznie
 {
     [SerializeField]
-    private float time1 = 2;
-    private float timer1;
+    private AudioClip BoomSoundClip;
+    [SerializeField]
+    private float time1 = 2,timer1;
+    
     private int x;
 
     void Start()
@@ -25,6 +27,7 @@ public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza /
     }
     private void destuction(){
         if(transform.position.x >= 1.8f || transform.position.x <= -1.8f){
+            Debug.Log("Smierc");
             Destroy(gameObject);
         }
     }
@@ -35,6 +38,17 @@ public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza /
         }
         else{
             timer1+=Time.deltaTime;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.CompareTag("PlayerBullet")){
+            TestLogicMenager.instance.AddScore(99);
+            BoomMenager.Instance.Destruction(transform.position,Com.color(6)); 
+            SoundMenager.instance.SoundClip(BoomSoundClip,transform,1);
+            other.GetComponent<TestBulletControler>().Player.GetComponent<TestPlayerMovment>().canfire = true;
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+
         }
     }
 }

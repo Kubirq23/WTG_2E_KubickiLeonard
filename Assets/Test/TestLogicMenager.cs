@@ -38,6 +38,7 @@ public class TestLogicMenager : MonoBehaviour{
     //czy wszyscy gracze nie zyja
     public void PlayerDead(){
         DeadPlayers ++;
+        Debug.Log(DeadPlayers);
         if(DeadPlayers >= PlayerCount){
             EndGame(false);
         }

@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 public class Com : MonoBehaviour //co to jest?
 {
     public static bool mc = true; //co to jest?// jesli wylonczono dziwienk to ten skrypt zapamientuje to i mowi nastempnej scenie
-    public static int[] SpritesColor = {0,0,0,0,0};
+    public static int[] SpritesColor = {0,0,0,0,0,Random.Range(0,14),Random.Range(0,14)};
     public static void SpriteChange(int pos,int state){
         SpritesColor[pos] = state;
     } 

@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class AlienAnimatioms : MonoBehaviour
-{
+public class BunkerAnimation : MonoBehaviour{
     private float DeleyTimer,DeleyTick;
     private Vector3 pos;
-    private float time ,Ypos = 1.4f;
+    private float time ,ypos = 0.7f;
     void Start(){ 
 
         pos = transform.position;
@@ -24,12 +22,12 @@ public class AlienAnimatioms : MonoBehaviour
         }
     }
     private void TweenMove(){
-        float tw = pos.y - Ypos*tween(time);
-        transform.position =new Vector3(transform.position.x,tw,0);
+        float tw = pos.y + ypos*tween(time);
+        transform.position = new Vector3(transform.position.x,tw,0);
         Debug.Log(tw);
         time += 0.5f *Time.deltaTime;
         if(time > 1){
-            transform.position = pos - new Vector3(0,Ypos,0);
+            transform.position = pos + new Vector3(0,ypos,0);
             enabled = false;
         }
     }
@@ -40,4 +38,5 @@ public class AlienAnimatioms : MonoBehaviour
 
         return 1 + c3 * (x - 1)*(x-1)*(x-1) + c1 * (x - 1)*(x - 1);
     }
+
 }

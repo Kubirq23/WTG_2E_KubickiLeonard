@@ -18,7 +18,7 @@ public class TestLifeDisplay : MonoBehaviour{
         }
     }
     public void RemoveLife(){
-        if(lifelist != null){
+        if(lifelist.Count != 0){
             Destroy(lifelist[0]);
             lifelist.RemoveAt(0);
         }

@@ -19,7 +19,7 @@ public class Enemy02 : MonoBehaviour{
     //movment of the ufos
     void move(){
         if(GoDown){
-            transform.position+=new Vector3(0,-0.12f,0);
+            transform.position+=new Vector3(0,-0.09f,0);
         }
         else{
             transform.position +=new Vector3(Direction*0.2f,0,0);
@@ -54,7 +54,7 @@ public class Enemy02 : MonoBehaviour{
 
     }
      private void Kaboom(){
-        if(ExistColumns.Length == 0 || ExistColumns == null) return;
+        if(ExistColumns.Length == 0) return;
         int l1 = Random.Range(0,ExistColumns.Length  -1);
         ExistColumns[l1].GetComponent<TestColumn>().SendBomb();
 
@@ -88,8 +88,8 @@ public class Enemy02 : MonoBehaviour{
     }
     //mystery
     public void TimeOut(int nr){
+        RefreshExistColumns();
         if(nr == 1){
-            RefreshExistColumns();
             End();
             move();
             Rot();
