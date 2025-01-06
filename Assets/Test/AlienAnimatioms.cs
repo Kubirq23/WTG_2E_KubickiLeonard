@@ -26,7 +26,6 @@ public class AlienAnimatioms : MonoBehaviour
     private void TweenMove(){
         float tw = pos.y - Ypos*tween(time);
         transform.position =new Vector3(transform.position.x,tw,0);
-        Debug.Log(tw);
         time += 0.5f *Time.deltaTime;
         if(time > 1){
             transform.position = pos - new Vector3(0,Ypos,0);

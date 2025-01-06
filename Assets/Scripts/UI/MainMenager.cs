@@ -7,7 +7,7 @@ public class MainMenager : MonoBehaviour //Manager // wiem
     private bck bc;
 
     [SerializeField]
-    private GameObject main,PreStart;
+    private GameObject main,PreStart,Name;
     [SerializeField]
     private GameObject cred,set,preplay;
 
@@ -18,6 +18,7 @@ public class MainMenager : MonoBehaviour //Manager // wiem
     public void PrePlay(){
         main.SetActive(false);
         PreStart.SetActive(true);
+        Name.SetActive(false);
     }
     public void Play(){
         SceneManager.LoadScene(1);
@@ -54,5 +55,6 @@ public class MainMenager : MonoBehaviour //Manager // wiem
         cred.SetActive(false);
         set.SetActive(false);
         preplay.SetActive(false);
+        Name.SetActive(true);
     }
 }

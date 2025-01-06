@@ -19,10 +19,12 @@ public class TestLogicMenager : MonoBehaviour{
             instance = this;
         }
     }
+
     public void AddScore(int Value){
         //dodawanie Scora
         int score = int.Parse(ScoreDisplay.text);
         ScoreDisplay.text = (score + Value).ToString();
+        ScoreBlink();
     }
     public void EndGame(bool isVictory){
         //ekran końcowy
@@ -33,7 +35,8 @@ public class TestLogicMenager : MonoBehaviour{
         EndScrean.SetActive(true);
     }
     public void ScoreBlink(){
-        //miganie
+        gameObject.GetComponent<ScoreBlink>().enabled = true;
+        gameObject.GetComponent<ScoreBlink>().count = 0;
     }
     //czy wszyscy gracze nie zyja
     public void PlayerDead(){

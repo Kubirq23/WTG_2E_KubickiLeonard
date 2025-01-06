@@ -84,7 +84,10 @@ public class Enemy02 : MonoBehaviour{
     }
     //speed ufo
     private void speeder(){
-
+        if(ExistColumns.Length > 1)return;
+        else{
+            gameObject.GetComponent<Timer>().time = 0.2f;
+        }
     }
     //mystery
     public void TimeOut(int nr){
