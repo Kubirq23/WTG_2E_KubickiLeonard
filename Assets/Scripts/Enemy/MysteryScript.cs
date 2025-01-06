@@ -27,7 +27,6 @@ public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza /
     }
     private void destuction(){
         if(transform.position.x >= 1.8f || transform.position.x <= -1.8f){
-            Debug.Log("Smierc");
             Destroy(gameObject);
         }
     }
@@ -42,7 +41,7 @@ public class MysteryScript : MonoBehaviour //nazwa nie powinna być tajemnicza /
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("PlayerBullet")){
-            TestLogicMenager.instance.AddScore(99);
+            TestLogicMenager.instance.AddScore(300);
             BoomMenager.Instance.Destruction(transform.position,Com.color(6)); 
             SoundMenager.instance.SoundClip(BoomSoundClip,transform,1);
             other.GetComponent<TestBulletControler>().Player.GetComponent<TestPlayerMovment>().canfire = true;

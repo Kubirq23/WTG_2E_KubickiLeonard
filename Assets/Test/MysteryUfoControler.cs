@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class MysteryUfoControler : MonoBehaviour
-{
+public class MysteryUfoControler : MonoBehaviour{
     [SerializeField]
     private GameObject MysteryUfo;
     private float time = 5,timer;
-
+    private int startpos;
     private void Update(){
         Tick();
     }
@@ -22,11 +20,11 @@ public class MysteryUfoControler : MonoBehaviour
     }
     private void OnTimeout(){
         Vector3 pozycja = new Vector3(1.79f,0.8f,0);
-        if(Random.Range(1,2) == 2){
-            pozycja.x = pozycja.x * -1;
-            Debug.Log(pozycja);
-        }
-        time = Random.Range(10.00f,20.00f);
+        startpos = Random.Range(-1,1);
+        if(startpos == 0)startpos = 1;
+        Debug.Log(startpos);
+        pozycja.x = pozycja.x * startpos;
+        time = Random.Range(13.00f,20.00f);
         GameObject ufo =Instantiate(MysteryUfo,pozycja,Quaternion.identity);
         ufo.GetComponent<SpriteRenderer>().color = Com.color(6);
     }

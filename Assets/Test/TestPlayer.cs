@@ -1,6 +1,5 @@
 
-using Unity.Mathematics;
-using UnityEditor;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TestPlayer : MonoBehaviour{
@@ -42,7 +41,6 @@ public class TestPlayer : MonoBehaviour{
         Debug.Log(Life);
         if(Life <= 0){
             TestLogicMenager.instance.PlayerDead();
-            Destroy(gameObject);
         }
         testLifeDisplay.RemoveLife();
     }
@@ -55,7 +53,13 @@ public class TestPlayer : MonoBehaviour{
     }
     private void End(){
         animator.SetBool("EndAnim",false);
-        Invincibility(false);
+        if(Life >0){
+            Invincibility(false);
+        }
+        else{
+            GetComponent<SpriteRenderer>().enabled =false;
+            enabled = false;
+        }
     }
     private void Invincibility(bool isIncvincable){
         testPlayerMovment.enabled = !isIncvincable;

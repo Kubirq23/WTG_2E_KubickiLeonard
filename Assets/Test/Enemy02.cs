@@ -5,6 +5,8 @@ public class Enemy02 : MonoBehaviour{
 
     [SerializeField]
     private GameObject Column;
+    [SerializeField]
+    private float Skok = 0.2f,Spadek = -0.09f;
     private GameObject[] ExistColumns;
     private bool GoDown;
     private int Direction =1;
@@ -19,10 +21,10 @@ public class Enemy02 : MonoBehaviour{
     //movment of the ufos
     void move(){
         if(GoDown){
-            transform.position+=new Vector3(0,-0.09f,0);
+            transform.position+=new Vector3(0,Spadek,0);
         }
         else{
-            transform.position +=new Vector3(Direction*0.2f,0,0);
+            transform.position +=new Vector3(Direction*Skok,0,0);
         }
         
     }

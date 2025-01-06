@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 934085b1c3a0e5ee483709ecc2fcd20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BoomSoundClip: {fileID: 8300000, guid: b650e423fc6870ddd95357b22ef46352, type: 3}
   time1: 2
   timer1: 0
 --- !u!95 &4565959202544119753
