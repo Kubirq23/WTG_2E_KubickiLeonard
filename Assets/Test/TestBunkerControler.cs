@@ -1,6 +1,5 @@
 
 using UnityEngine;
-using UnityEngine.AI;
 
 public class TestBunkerControler : MonoBehaviour{
     [SerializeField]

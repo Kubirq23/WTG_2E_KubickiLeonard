@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class AlienAnimatioms : MonoBehaviour
-{
+public class AlienAnimatioms : MonoBehaviour{
     private float DeleyTimer,DeleyTick;
     private Vector3 pos;
     private float time ,Ypos = 1.4f;
